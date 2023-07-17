@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dVt-iN-Sje" customClass="Imagecell" customModule="PhotoLibrary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="u3y-jl-UJB">
+                        <rect key="frame" x="8" y="9" width="184" height="182.66666666666666"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="P86-2U-V2G"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="u3y-jl-UJB" secondAttribute="trailing" constant="8" id="1MD-DU-b7c"/>
+                <constraint firstAttribute="bottom" secondItem="u3y-jl-UJB" secondAttribute="bottom" constant="8" id="Z1h-N4-iNR"/>
+                <constraint firstItem="u3y-jl-UJB" firstAttribute="leading" secondItem="dVt-iN-Sje" secondAttribute="leading" constant="8" id="fwu-2d-pvL"/>
+                <constraint firstItem="u3y-jl-UJB" firstAttribute="top" secondItem="dVt-iN-Sje" secondAttribute="top" constant="8" id="oxy-Za-rx6"/>
+            </constraints>
+            <connections>
+                <outlet property="imgview" destination="u3y-jl-UJB" id="l6V-Ox-ck3"/>
+            </connections>
+            <point key="canvasLocation" x="127.53623188405798" y="97.767857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
